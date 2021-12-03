@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>iframeTest</title>
+    <script>
+        function go() {
+            //提前获取需要的DOM元素
+            let value = document.getElementById("url").value;
+            document.getElementById("iframe1").src=value;
+        }
+    </script>
+</head>
+<body>
+<div>
+    <p>请输入地址：</p>
+    <p>
+        <input type="text" id="url" value="https://www.uestc.edu.cn">
+        <input type="button" onclick="go()" value="提交"></button>
+    </p>
+
+</div>
+<div>
+    <iframe id="iframe1" src="" frameborder="1" style="width: 100%;height: 500px"></iframe>
+</div>
+</body>
+</html>
